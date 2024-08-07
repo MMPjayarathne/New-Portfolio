@@ -1,0 +1,71 @@
+<section id="myskills">
+    <div class="skills" fxLayout="row" >
+        <div fxFlex="100%">
+            <h1>My Skills</h1>
+        </div>
+    </div>
+    <div class="my-skills" fxLayout="row" fxLayoutGap="0px">
+        <div class="type" fxFlex="40%">
+            <aside class="sidebar">
+                <nav class="nav">
+                    <ul>
+                        <li [class.active]="selectedTab === 'Languages'" (click)="selectTab('Languages')"><a>Languages</a></li>
+                        <li [class.active]="selectedTab === 'Frameworks & Libraries'" (click)="selectTab('Frameworks & Libraries')"><a>Frameworks & Libraries</a></li>
+                        <li [class.active]="selectedTab === 'Databases'" (click)="selectTab('Databases')"><a>Databases</a></li>
+                        <li [class.active]="selectedTab === 'Tools & Services'" (click)="selectTab('Tools & Services')"><a>Tools & Services</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+        <div fxFlex="60%" class="skillList">
+            <div *ngIf="selectedTab === 'Languages'" class="Languages">
+                <div class="card-container" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="20px">
+                    <div class="cardItem" fxFlex="calc(33.33% - 20px)">
+                        <div class="image"><img src="../../../assets/stacks/languages/java.png" alt="Java"></div>
+                        <div class="title">Java</div>
+                    </div>
+                    <div class="cardItem" fxFlex="calc(33.33% - 20px)">
+                        <div class="image"><img src="../../../assets/stacks/languages/java.png" alt="Java"></div>
+                        <div class="title">Java</div>
+                    </div>
+                    <div class="cardItem" fxFlex="calc(33.33% - 20px)">
+                        <div class="image"><img src="../../../assets/stacks/languages/java.png" alt="Java"></div>
+                        <div class="title">Java</div>
+                    </div>
+                    <div class="cardItem" fxFlex="calc(33.33% - 20px)">
+                        <div class="image"><img src="../../../assets/stacks/languages/java.png" alt="Java"></div>
+                        <div class="title">Java</div>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="selectedTab === 'Frameworks & Libraries'" class="F&L">
+                <ul>
+                    <li>Frameworks & Libraries</li>
+                    <li>Frameworks & Libraries</li>
+                    <li>Frameworks & Libraries</li>
+                    <li>Frameworks & Libraries</li>
+                    <li>Frameworks & Libraries</li>
+                </ul>
+            </div>
+            <div *ngIf="selectedTab === 'Databases'" class="Databases">
+                <ul>
+                    <li>Databases</li>
+                    <li>Databases</li>
+                    <li>Databases</li>
+                    <li>Databases</li>
+                    <li>Databases</li>
+                </ul>
+            </div>
+            <div *ngIf="selectedTab === 'Tools & Services'" class="T&S">
+                <ul>
+                    <li>Tools & Services</li>
+                    <li>Tools & Services</li>
+                    <li>Tools & Services</li>
+                    <li>Tools & Services</li>
+                    <li>Tools & Services</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</section>

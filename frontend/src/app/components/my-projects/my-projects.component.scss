@@ -1,0 +1,60 @@
+#myprojects{
+    margin-bottom: 20px;
+}
+.projects{
+    h1{
+        border-bottom: 3px solid #5cbdb9;
+        border-width: thick;
+        
+    }
+}
+
+.my-projects{
+    margin-top: 5%;
+}
+.project-container {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 100%; 
+}
+
+.project {
+    width: calc(33.33% - 20px);
+    max-width:calc(33.33% - 20px); ; 
+    background-color: #ffffff;
+    border: 0px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    display: flex;
+    border-radius: 10%;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.project:hover {
+    transform: scale(1.05);
+
+}
+.projectImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+img{
+   
+    width: 80%;
+}
+}
+.projectTitle{
+    font-weight: bold;
+    font-size: large;
+}
+.projectDes{
+    text-align: center;
+}
+

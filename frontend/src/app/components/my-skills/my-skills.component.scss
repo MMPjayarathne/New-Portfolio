@@ -1,0 +1,143 @@
+#myskills{
+  margin-bottom: 20px;
+  height: 100vh;
+}
+.skills{
+    h1{
+        border-bottom: 3px solid #5cbdb9;
+        border-width: thick;
+        
+    }
+}
+
+.my-skills{
+    margin-top: 0;
+}
+
+//type-nav
+
+.sidebar {
+    
+    height: 80vh;
+    background: #5cbdb9;
+    font-size: 0.65em;
+  }
+  
+  .nav {
+    position: relative;
+    margin: 0 10%;
+    text-align: right;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size:small;
+  }
+  
+  .nav ul {
+    list-style: none;
+    
+    li {
+      position: relative;
+      margin: 3.2em 0;
+      
+      a {
+        line-height: 5em;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.4em;
+        color: rgba(#FFF, 0.35);
+        display: block;
+        transition: all ease-out 300ms;
+      }
+      
+      &.active a {
+        color: white;
+      }
+      
+      &:not(.active)::after {
+        opacity: 0.2;
+      }
+      
+      &:not(.active):hover a {
+        color: rgba(#FFF, 0.75);
+      }
+      
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.2em;
+        background: black;
+        left: 0;
+        bottom: 0;
+        background-image: linear-gradient(to right, #40b5bd, #0a514e)
+      }
+    }
+  }
+  
+  .type .nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .type .nav li {
+    margin: 10px 0;
+  }
+  
+  .type .nav li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .type .nav li.active a {
+    font-weight: bold;
+  }
+
+
+
+  //CSS for the skill  list
+
+  .skillList {
+    padding: 50px;
+    align-items: center;
+
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    max-width: 100%; 
+}
+
+.cardItem {
+    width: calc(33.33% - 20px);
+    max-width:calc(33.33% - 20px); ; 
+    background-color: #ffffff;
+    border: 0px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.cardItem:hover {
+    transform: scale(1.05);
+}
+
+.image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.title {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}

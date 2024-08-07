@@ -1,0 +1,23 @@
+.name{
+    font-size: 30px;
+    font-weight: 500;
+    color: #5cbdb9;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.nav-item{
+    font-size: 15px;
+   
+    button{
+        width: 80%;
+        background-color: transparent;
+        border: 0;
+        padding: 8px;
+        border-radius: 20px; 
+
+        &:hover{
+            background-color: #5cbdb9;
+            cursor: pointer;
+        }
+    }
+}
