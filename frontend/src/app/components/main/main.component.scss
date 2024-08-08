@@ -1,85 +1,95 @@
+@import '../../variables';
 .main-div{
-    margin-top: 20px;
+  height: 100vh;
     img{
-        width: 80%;
-        padding-top: 100px;
-        float: right;
-
+      width: 60%;
+      float: right;
+      position: relative;
+      z-index: 1;
+      -webkit-filter: drop-shadow(5px 5px 5px #696767);
+      filter: drop-shadow(5px 5px 5px #6c6a6a);
     }
-    height: 100vh;
-}
-.welcome{
-    padding-top: 100px;
-    color: #5cbdb9;
-    font-size: 100px;
-    font-weight: bolder;
-    justify-content: center;
-  p{
-    font-size: 20px;
-    font-weight: lighter;
-    color: #000000;
-  }
+    
 
-$speed: 0.5s;
-
-.btn-flip{
-    margin-left: 15px;
-    font-size: 20px;
-  opacity: 1;
-  outline: 0;
-  color: #fff;
-  line-height: 40px;
+    .welcome{
+      padding-top: 10%;
+      color: $first-color;
+      font-size: 150px;
+      font-weight: bolder;
+      justify-content: center;
+    p{
+      font-size: 20px;
+      font-weight: lighter;
+      color: #000000;
+    }
+  
+  $speed: 0.5s;
+  
+ 
+.Download-button {
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 12px 20px;
+  color: white;
+  background: $first-color;
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em rgba(59, 48, 78, 0.527);
+  letter-spacing: 0.05em;
+  border-radius: 8px;
+  cursor: pointer;
   position: relative;
-  text-align: center;
-  letter-spacing: 1px;
-  display: inline-block;
-  text-decoration: none;
-  font-family: 'Open Sans';
-  text-transform: uppercase;
+}
+
+.Download-button svg {
+  margin-right: 8px;
+  width: 25px;
+}
+
+.Download-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em rgba(88, 71, 116, 0.627);
+}
+
+.Download-button:active {
+  box-shadow: 0 0.3em 1em -0.5em rgba(88, 71, 116, 0.627);
+}
+
+.Download-button::before {
+  content: "";
+  width: 4px;
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.Download-button::after {
+  content: "";
+  width: 4px;
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  right: 0;
+  transition: all 0.2s;
+}
+
+.Download-button:hover::before,
+.Download-button:hover::after {
+  height: 60%;
+}
+
   
-  &:hover{
-    
-    &:after{
-      opacity: 1;
-      transform: translateY(0) rotateX(0);
-    }
-    
-    &:before{
-      opacity: 0;
-      transform: translateY(50%) rotateX(90deg);
-    }
-  }
-  
-  &:after{
-    top: 0;
-    left: 0;
-    opacity: 0;
-    width: 100%;
-    color: #5cbdb9;
-    display: block;
-    transition: $speed;
-    position: absolute;
-    background: #000000;
-    content: attr(data-back);
-    transform: translateY(-50%) rotateX(90deg);
-  }
-  
-  &:before{
-    top: 0;
-    left: 0;
-    opacity: 1;
-    color: #000000;
-    display: block;
-    padding: 0 30px;
-    line-height: 40px;
-    transition: $speed;
-    position: relative;
-    background: #5cbdb9;
-    content: attr(data-front);
-    transform: translateY(0) rotateX(0);
   }
 }
-}
+
 .slogan{
     color: black;
     font-size:20px;

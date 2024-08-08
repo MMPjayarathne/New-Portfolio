@@ -1,7 +1,8 @@
+@import '../../variables';
 .name{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 500;
-    color: #5cbdb9;
+    color: $third-color;
     font-family: 'Brush Script MT', cursive;
 }
 
@@ -16,7 +17,7 @@
         border-radius: 20px; 
 
         &:hover{
-            background-color: #5cbdb9;
+            background-color: $forth-color;
             cursor: pointer;
         }
     }

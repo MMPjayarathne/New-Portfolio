@@ -1,9 +1,10 @@
+@import '../../variables';
 #myprojects{
     margin-bottom: 20px;
 }
 .projects{
     h1{
-        border-bottom: 3px solid #5cbdb9;
+        border-bottom: 3px solid $second-color;
         border-width: thick;
         
     }

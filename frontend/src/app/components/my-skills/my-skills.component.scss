@@ -1,10 +1,11 @@
+@import '../../variables';
 #myskills{
   margin-bottom: 20px;
   height: 100vh;
 }
 .skills{
     h1{
-        border-bottom: 3px solid #5cbdb9;
+        border-bottom: 3px solid $second-color;
         border-width: thick;
         
     }
@@ -19,7 +20,7 @@
 .sidebar {
     
     height: 80vh;
-    background: #5cbdb9;
+    background: $forth-color;
     font-size: 0.65em;
   }
   
@@ -70,7 +71,7 @@
         background: black;
         left: 0;
         bottom: 0;
-        background-image: linear-gradient(to right, #40b5bd, #0a514e)
+        background-image: linear-gradient(to right, $third-color, $first-color)
       }
     }
   }

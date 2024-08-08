@@ -1,3 +1,4 @@
+@import '../../variables';
 .icon{
     img{
         width: 30%;
@@ -7,6 +8,7 @@
 .my-pic{
     img{
         width: 80%;
+        margin-top: 10%;
     }
 }
 
@@ -17,7 +19,7 @@
         color: #000000;
     }
     h1{
-        border-bottom: 3px solid #5cbdb9;
+        border-bottom: 3px solid $second-color;
         border-width: thick;
     }
 }
@@ -70,6 +72,6 @@ li {
 strong { color: #292929; }
 
 ol.alternating-colors { 
-  li:nth-child(odd):before { border-color: #5cbdb9; }
+  li:nth-child(odd):before { border-color: $forth-color; }
   li:nth-child(even):before { border-color: #000000; }
 }
