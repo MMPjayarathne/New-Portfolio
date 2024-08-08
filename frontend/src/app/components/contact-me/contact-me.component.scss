@@ -1,0 +1,133 @@
+@import '../../variables';
+#contactme{
+   // margin-top: 8%;
+   height: 100vh;
+}
+
+
+.contact{
+    p{
+        font-weight: lighter;
+        color: #000000;
+    }
+    h1{
+        border-bottom: 3px solid $forth-color;
+        border-width: thick;
+    }
+}
+.sidebar {
+    
+    height:100%;
+    background: $forth-color;
+  }
+
+.content{
+    padding: 10%;
+}
+
+.info{
+    i{
+       font-size: large;
+    }
+    font-weight: normal;
+    padding-bottom: 10%;
+    
+}
+/* Container for the form */
+.contacts {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* Form styles */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form input styling */
+.form p {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form input, .form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    outline: none;
+    transition: border-color 0.3s;
+    background: none;
+}
+
+.form input::placeholder, .form textarea::placeholder {
+    color: #bbb;
+}
+.form textarea {
+    height: 100px; /* Adjust the height as needed */
+    border-radius: 5px;
+    border-bottom: 2px solid #ddd;
+}
+
+.form input:focus, .form textarea:focus {
+    border-bottom-color: $first-color;
+}
+
+.form p:before {
+    content: attr(type);
+    display: block;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    color: #888;
+}
+
+/* Button styling */
+button {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid $first-color;
+    background-color: $first-color;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    align-self: flex-start;
+}
+
+button:hover {
+    background-color: #fff;
+    color: $first-color;
+    transform: scale(1.05);
+}
+
+/* Icon and contact details styling */
+.form div {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form div span {
+    margin-right: 10px;
+    color: $first-color;
+}
+
+
+.form div .fa-paper-plane {
+    margin-left: 20px;
+    
+}
+
+/* Adding hover effect to icons */
+.form div span:hover {
+    color: #333;
+}
